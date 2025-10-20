@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+
+
+
+      /* Define a custom animation property */
+     /* Keyframes for continuous left scroll */
+
+/* Custom classes using Tailwind's @apply */
+
+      
+     /*work css*/
+  @layer utilities {
+    @keyframes blink {
+      0%, 50%, 100% { opacity: 1; }
+      25%, 75% { opacity: 0; }
+    }
+    .cursor::after {
+      content: "|";
+      margin-left: 2px;
+      color: black;
+      animation: blink 0.7s infinite;
+    }
+  }
+
+  @layer utilities {
+    @keyframes spin-slow {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .animate-spin-slow {
+      animation: spin-slow 3s linear infinite;
+    }
+
+    .scroll-animation {
+  opacity: 0;
+  filter:blur(20);
+  transform: translateY(100px);
+  transition: all 1.2s ease;
+}
+
+.scroll-animation.show {
+  opacity: 1;
+filter:blur(0);
+  transform: translateY(0);
+}
+  }
+
+  @keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Custom classes using Tailwind's @apply */
+.slider-img {
+  @apply w-[300px] h-[200px] object-cover;
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+
+      
+
+      /* Define the keyframes for the animation */
+      
+
+  
+
+
+.hamburger-menu.open .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+
+.hamburger-menu.open .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.open .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, 6px);
+}
+
+

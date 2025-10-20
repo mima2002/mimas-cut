@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-f4b8T+QX6qC9nN2Fh3rjHptF77w4j+z/ZT6wU1r6ef5LkE8tEe/fM7kS76RmFJpMefG1xg5Tq8P4+cO7hNns7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="/assest/libary/fontawesome-free-6.7.2-web/css/all.min.css" />
+
+  <link href="/src/output.css" rel="stylesheet">
+  <title>Portfolio</title>
+    <style>
+        /* Mobile menu positioning */
+       
+
+        /* Navbar button and hamburger styling */
+        #menuButton {
+            z-index: 60;
+        }
+
+        /* Ensure the hamburger is always visible */
+        .hamburger-container {
+            position: relative;
+            z-index: 60;
+        }
+
+        /* About Section styling */
+        .about-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .about-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        
+
+        /* Rooms section styling */
+        .room-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .room-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .room-card h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .room-card p {
+            font-size: 1.1rem;
+            color: #4b5563;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+
+    <!-- Navbar -->
+   <!-- Navbar -->
+    <nav class="bg-yellow-700 text-white px-6 lg:px-[120px] py-4 lg:py-7">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class=" text-[14px] lg:text-2xl font-bold">Brokers Hotel</div>
+            <!-- Desktop Menu -->
+            <div class="bg-yellow-700  space-x-4 hidden md:flex mr-[70px] gap-10">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="#rooms" class="nav-link">Rooms</a>
+                <a href="/src/contact.html" class="nav-link">Contact</a>
+                <a href="/index.html#booking" class="nav-link">Book Now</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden text-[16px] hamburger-container">
+                <button id="menuButton" class="text-white">
+                    <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="text-[14px] pl-6 left-0 right-0 z-100 w-full flex flex-col py-7 absolute bg-yellow-700 hidden md:hidden mobile-menu gap-4">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="#rooms" class="nav-link">Rooms</a>
+            <a href="/src/contact.html" class="nav-link">Contact</a>
+            <a href="/index.html#booking" class="nav-link">Book Now</a>
+        </div>
+    </nav>
+
+
+    <!-- About Section -->
+    <section id="about" class="  py-15 md:py-37 px-6 md:px-46 bg-gray-50">
+        <div  class="  max-w-7xl mx-auto  ">
+            <h2 class="text-3xl md:text-5xl font-bold mb-8 ">About <span class="underline text-yellow-700">Us</span></h2>
+            <p class="text-[14px] md:text-[18px] pb-20 md:pb-[134px] text-gray-600 ">Experience unmatched comfort, luxury, and warm hospitality in the heart of the city.
+Relax in our elegant rooms, enjoy world-class dining, and unwind by our serene poolside.
+Whether you’re here for business or leisure, every stay is designed to make you feel special.</p>
+            <div class="about-section">
+                <!-- How We Operate -->
+                <div class="scroll-animation about-card ">
+                    <img src="/assest/images/how-we-operate.jpg" alt="How We Operate" class="about-image">
+                    <h3>How We Operate</h3>
+                    <p class="text-[14px] md:text-[16.5px] text-gray-700">At Hotel XYZ, we focus on providing personalized service. Our team is dedicated to ensuring you have an exceptional stay with us, from check-in to check-out.</p>
+                </div>
+
+                <!-- Our History -->
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/our-history.jpg" alt="Our History" class="about-image">
+                    <h3>Our History</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Founded in 1990, Hotel XYZ has a long legacy of excellence. We've evolved from a small family-owned business into one of the most trusted hotels in the region.</p>
+                </div>
+
+                <!-- What We Offer -->
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/we-offer.jpg" alt="What We Offer" class="about-image">
+                    <h3>What We Offer</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">From luxurious rooms to gourmet dining, our hotel offers the best amenities for both business and leisure travelers. Experience comfort, elegance, and convenience.</p>
+                </div>
+
+                <!-- What Makes Us Different -->
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/UIUX starategyy1.jpg" alt="What Makes Us Different" class="about-image">
+                    <h3>What Makes Us Different</h3>
+                    <p class=" text-gray-700 text-[14px] md:text-[16.5px]">We’re not just a place to stay—we're a destination. With a focus on sustainability, innovative services, and a prime location, we offer a unique experience that you won’t find anywhere else.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class="py-20 px-6 md:px-46">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="scroll-animation text-3xl md:text-4xl font-bold mb-8">Our <span class="text-yellow-700">Rooms</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Standard Room -->
+                <div class="scroll-animation room-card">
+                    <img src="/assest/images/single-room.jpg" alt="Standard Room" class="room-image">
+                    <h3>Standard Room</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Comfortable and cozy, perfect for short stays. Includes essential amenities for a restful night’s sleep.</p>
+                </div>
+                <!-- Deluxe Room -->
+                <div class="scroll-animation room-card">
+                    <img src="/assest/images/double-room.jpg" alt="Deluxe Room" class="room-image">
+                    <h3>Deluxe Room</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Spacious rooms with premium amenities and a stunning view. Ideal for travelers who want extra comfort.</p>
+                </div>
+                <!-- Suite -->
+                <div class="scroll-animation room-card">
+                    <img src="/assest/images/suite.jpg" alt="Suite" class="room-image">
+                    <h3>Suite</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Luxurious suites with separate living areas and deluxe features. Perfect for longer stays or special occasions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dining Section -->
+    <section id="dining" class="py-20 px-6 md:px-46 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="scroll-animation text-3xl md:text-4xl font-bold mb-8">Din<span class="text-yellow-700">ings</span></h2>
+            <div class="about-section">
+                <div class="scroll-animation about-card">
+                    
+                    <img src="/assest/images/dinning.jpg" alt="Dining" class="about-image">
+                    <h3>Our Dining Experience</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Indulge in our gourmet dining options, offering a range of international and local delicacies. From fine dining to casual meals, our restaurants cater to every taste and preference.</p>
+                </div>
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/bristro.jpg" alt="Restaurant" class="about-image">
+                    <h3>The Bistro</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Enjoy a relaxed dining experience at The Bistro, our signature restaurant offering fresh, seasonal dishes paired with an extensive wine list.</p>
+                </div>
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/rooftop.jpg" alt="Bar" class="about-image">
+                    <h3>Rooftop Bar</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Unwind with stunning views of the city skyline while sipping on crafted cocktails at our rooftop bar. A perfect place to relax after a day of sightseeing or business meetings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wellness Section -->
+    <section id="wellness" class="py-20 px-6 md:px-46">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="scroll-animation text-3xl md:text-4xl font-bold mb-8">Wellness & <span class="text-yellow-700">Spar</span></h2>
+            <div class="about-section">
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/resturant.jpg" alt="Spa" class="about-image">
+                    <h3>Relax & Rejuvenate</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Our wellness center offers a range of luxurious spa treatments, including massages, facials, and body therapies designed to soothe your mind and body.</p>
+                </div>
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/fitness center.jpg" alt="Fitness Center" class="about-image">
+                    <h3>Fitness Center</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Maintain your fitness routine while staying with us at our state-of-the-art fitness center. Equipped with the latest exercise equipment, it's perfect for keeping active during your stay.</p>
+                </div>
+                <div class="scroll-animation about-card">
+                    <img src="/assest/images/swimming-pool.jpg" alt="Pool" class="about-image">
+                    <h3>Swimming Pool</h3>
+                    <p class="text-gray-700 text-[14px] md:text-[16.5px]">Relax and unwind by our outdoor swimming pool, offering a tranquil environment with comfortable loungers and poolside service for refreshments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 md:px-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="lg:text-3xl text-[27px] font-bold mb-5 lg:mb-8 text-left px-[16px] lg:px-[120px] ">Our <span class="text-yellow-700">Info</span></h2>
+            <div class="space-y-6">
+                <p class="lg:text-lg text-[16px] text-left px-[16px] lg:px-[120px] pr-[0px] lg:pr-[350px]">We are here to assist you! For inquiries or bookings, feel free to contact us through the following channels:</p>
+                <div>
+                    <p class="lg:text-lg text-[16px] font-bold text-left px-[16px] lg:px-[120px]">Phone: (123) 456-7890</p>
+                    <p class="lg:text-lg text-[16px] font-bold text-left px-[16px] lg:px-[120px]">Email: contact@hotelxyz.com</p>
+                </div>
+                <div class="text-left px-[16px] lg:px-[120px]">
+                    <a href="https://goo.gl/maps/xyz" target="_blank" class="text-yellow-700 font-bold">Our Location on Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Footer -->
+ <!-- Footer -->
+  <section class="footer  justify-center flex-col  lg:px-[0px]">
+<footer class=" lg:rounded-[0px] px-[30px] py-[60px] lg:px-[100px] bg-yellow-800 text-white flex gap-[30px] lg:gap-[80px] flex-col lg:flex-row">
+  <div class=" flex  mt-[-14px] align-text-top   lg:w-[40%]  gap-6.5 flex-col  ">
+    
+    <h2 class="text-[24px] lg:text-[40px] font-semibold"><span class="text-shadow-black font-black">Brokers Hotel</span></h2>
+    <a href="/src/contact.html"><button class="border-white border-0 hover:border-1 text-gray-800 hover:bg-yellow-600 transition-all duration-400 cursor-pointer hover:text-white rounded-[23px] bg-green-50 w-[139px] h-[44px] text-[14px]">Reach Out <i class="fas fa-arrow-right"></i></button></a>
+  </div>
+
+
+  <div class="flex flex-col lg:gap-10.5">
+    <h3 class="font-bold text-[18px] ">Links</h3>
+    <div class="lg:flex-col flex gap-5">
+      <a class="hover:text-gray-700 text-[16px] " href="/index.html">Home</a>
+    <a class="hover:text-gray-700 text-[16px] " href="/src/contact.html">Contact</a>
+    <a class="hover:text-gray-700 text-[16px] " href="/src/about.html">About</a>
+    </div>
+  </div>
+
+
+  <div class="text-[14px] lg:gap-10.5 flex flex-col">
+    <h3 class="font-bold text-[18px]">contact</h3>
+    <div class="flex flex-col lg:gap-2">
+    <a href="" class="w-[100%] underline text-gray-300 hover:text-gray-700">awajimimaowen@gmail.com</a>
+    <strong class="text-gray-50">+2348056879505</strong>
+    </div>
+  </div>
+
+  
+
+  <div class="flex flex-col w-[10%]   gap-2.5 lg:gap-10.5 ">
+    <h3 class="font-bold text-[18px] " >Socials</h3>
+      <div class="flex gap-6">
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-facebook-f text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-twitter text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-linkedin-in text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-github text-[16px] lg:text-[24px]"></i></a>
+      </div>
+  </div>
+
+  
+</footer>
+</section>
+
+
+
+    <script>
+        // Mobile menu toggle
+      const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+        if (menuButton && mobileMenu && hamburgerIcon) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    hamburgerIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+                    menuButton.setAttribute('aria-expanded', 'false');
+                } else {
+                    hamburgerIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+                    menuButton.setAttribute('aria-expanded', 'true');
+                }
+            });
+        }
+    </script>
+
+    <script type="module" src="/assest/javascript/work.js"></script>
+</body>
+</html>

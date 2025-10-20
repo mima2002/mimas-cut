@@ -1,0 +1,557 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assest/libary/fontawesome-free-6.7.2-web/css/all.min.css" />
+  <link href="/src/output.css" rel="stylesheet">
+  <title>Portfolio</title>
+
+</head>
+<body class="bg-white">
+  <nav class="nav sticky top-0 bg-white shadow-md md:shadow-none  z-50">
+  <div class="text-green-600 hidden md:flex text-[14px] justify-center text-center py-4">
+    Get Quick response via contact us on WhatsApp
+    <img class="mx-2.5" src="/assest/images/black-whatsapp.png" />
+    <span class="font-bold">+2348056879505</span>
+  </div>
+
+  <div class="lg:px-[100px] px-[16px] sm:px-7 xl:px-[120px]">
+    <div class="flex justify-between h-16">
+      <!---LOGO-->
+      <div class="flex-shrink-0 flex items-center">
+        <a href="/index.html" class="text-xl font-thin text-green-600">
+          <img class="w-[63px] h-[16px] md:w-[113px] md:h-[26px]" src="/assest/images/logo.png" alt="Logo">
+        </a>
+      </div>
+
+      <!--- Desktop Nav -->
+      <div class="hidden md:flex items-center space-x-6">
+        <a href="index.html" class="text-[14px] text-gray-700 hover:text-green-600">Home</a>
+        <a href="/src/work.html" class="text-[14px] text-gray-700 hover:text-green-600">Work</a>
+        <a href="/src/about.html" class="text-[14px] text-gray-700 hover:text-green-600">About</a>
+        <a href="/src/contact.html" class="text-center   bg-green-500 rounded-[10px] text-[14px] py-3 px-7 font-bold text-zinc-50 hover:border-2 hover:border-green-300 transition-all duration-400  hover:bg-green-900">Contact</a>
+      </div>
+
+      <!--- Mobile menu button -->
+      <div class="md:hidden flex items-center">
+        <div id="menu-btn" class="flex flex-col justify-center  w-8 h-8 cursor-pointer space-y-1" role="button" tabindex="0" aria-label="Toggle menu">
+          <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-500"></span>
+          <span class="block w-4 h-0.5 bg-gray-700 transition-all duration-500"></span>
+          <span class="block w-6 h-0.5 bg-gray-700 transition-all duration-500"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="absolute top-full left-0 w-full bg-green-50 shadow-lg md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+    <a href="/index.html" class="block py-3 px-4 text-gray-700 hover:text-green-600">Home</a>
+    <a href="/src/work.html" class="block py-3 px-4 text-gray-700 hover:text-green-600">Work</a>
+    <a href="/src/about.html" class="block py-3 px-4 text-gray-700 hover:text-green-600">About</a>
+    <a href="/src/contact.html" class="block py-3 px-4 text-gray-700 hover:text-green-600">Contact</a>
+  </div>
+</nav>
+
+
+ <!--- Hero Section-->
+  <div class="md:justify-center md:gap-[100px] xl:gap-[197px] lg:gap-[167px] md:text-left md:flex-row-reverse  px-[16px] md:px-[30px] lg:px-[100px] xl:px-[120px] gap-5 py-13.5 flex sm:items-center text-center flex-col">
+
+  <!-- Wrapper for rotating border -->
+  <div class="flex justify-center relative ">
+    <!-- Infinite border always scaled to image -->
+    <div class="  bg-green-500 w-[239px] h-[229px]  md:h-[139px] md:w-[139px]  xl:h-[411px] xl:w-[400px] absolute rounded-full border border-green-500 animate-spin-slow"
+         ></div>
+
+    <!-- Hero image -->
+    <img class=" relative z-10 h-[229px] w-[229px] max-w-[229px] md:max-w-[329px] lg:max-w-[389px]  md:h-[309px] md:w-[400px]       lg:h-[330px] lg:w-[480px]  xl:h-[400px] xl:w-[750px] rounded-full"
+         src="/assest/images/about-main1.jpg " alt="Hero Image">
+  </div>
+
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col gap-1">
+      <h2 class=" md:text-[20px] text-[17px] text-green-600 font-semibold">Welcome, I'm</h2>
+      <h1 class=" md:text-[45px] lg:text-[60px] text-[32px] leading-9 md:leading-16 lg:leading-18 font-bold">
+        Awajimima Obisike 
+      </h1>
+    </div>
+    <div class="flex-col text-center gap-0 md:text-left">
+      <h2 id="typingText1" class=" text-[19px] lg:text-[24px] text-green-700 font-regular"></h2>
+      <h1 id="typingText2" class="text-[15px] lg:text-[17px] text-gray-500 font-regular"></h1>
+    </div>
+    <div class="flex gap-2 justify-center md:justify-start">
+      <a href="/src/contact.html" class="cursor-pointer text-center w-[108px] bg-green-500 rounded-[10px] transition-all duration-300 text-[15px] py-3 px-3.5 font-medium text-zinc-50 hover:border-2 hover:border-green-300  hover:bg-green-900">Hire me</a>
+      <span class="font-medium content-center">download</span>
+      <div class="flex items-baseline-last hover:items-center">
+        <a href="/assest/images/2caseStudy7.png" download="Owen's-Resume.pdf"><img class="h-[36px] w-[38px] hover:h-[40px] hover:w-[38px] transition-all duration-400" src="/assest/images/home-download_icon.png" alt="Download Icon"></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Tailwind custom animation -->
+
+  <section class=" bg-green-50 py-12 lg:py-28   ">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="scroll-animation text-[28px] md:text-[30px] lg:text-[38px] xl:text-[40px] font-bold text-center  mb-12">Our <span class="text-green-600">Service</span></h2>
+
+            <!---Grid-part-->
+      <div class="scroll-animation  grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-[16px] md:px-[30px] lg:px-[100px] xl:px-[120px]   gap-8">
+        <div class="relative shadow-lg  group box w-full h-[200px] md:h-[220px] lg:h-[220px] bg-white rounded-md cursor-pointer flex flex-col justify-center text-black overflow-hidden">
+            <div class="text-4xl text-green-500 mb-4 mx-3 mt-6 z-10"><i class="fa-brands fa-figma text-green-600 text-4xl ml-3 z-10"></i></div>
+            <h3 class="mx-6 text-xl font-semibold mb-2 text-black transition-all duration-300 text-shadow-gray-900 z-10">UI/UX</h3>
+            <p class="mx-6 text-gray-600 mb-6 transition-all duration-300 z-10">We create beautiful, fast, and user-friendly mobile applications for iOS and Android platforms.</p>
+            <div class="overlay absolute inset-0 z-0  bg-green-600  scale-0 group-[.active]:scale-100 transition-all duration-300 pointer-events-none"></div>
+          </div>
+
+
+          <div class="scroll-animation relative shadow-lg group box w-full h-[200px] md:h-[220px] lg:h-[220px] bg-white rounded-md cursor-pointer flex flex-col justify-center text-black overflow-hidden">
+            <div class="text-4xl text-green-500 mb-4 mx-3 mt-6 z-10"><i class="fas fa-code ml-3 z-10 text-green-600 text-4xl"></i></div>
+            <h3 class="mx-6 text-xl font-semibold mb-2 text-black transition-all duration-300 text-shadow-gray-900 z-10">Front-end Development</h3>
+            <p class="mx-6 text-gray-600 mb-6 transition-all duration-300 z-10">We create beautiful, fast, and user-friendly mobile applications for iOS and Android platforms.</p>
+            <div class="overlay absolute inset-0 z-0  bg-green-600  scale-0 group-[.active]:scale-100 transition-all duration-300 pointer-events-none"></div>
+          </div>
+
+          <div class="scroll-animation relative shadow-lg group box w-full h-[200px] md:h-[220px] lg:h-[220px] bg-white rounded-md cursor-pointer flex flex-col justify-center text-black overflow-hidden">
+            <div class="text-4xl text-green-500 mb-4 mx-3 mt-6 z-10"><i class="fas fa-signature text-green-600 text-4xl ml-3 z-10"></i></div>
+            <h3 class="mx-6 text-xl font-semibold mb-2 text-black transition-all duration-300 text-shadow-gray-900 z-10">Branding</h3>
+            <p class="mx-6 text-gray-600 mb-6 transition-all duration-300 z-10">We create beautiful, fast, and user-friendly mobile applications for iOS and Android platforms.</p>
+            <div class="overlay absolute inset-0 z-0 bg-green-600  scale-0 group-[.active]:scale-100 transition-all duration-300 pointer-events-none"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  
+
+<section class="py-12 md:py-20 lg:py-28 lg:px-[100px] px-[16px] sm:px-7 xl:px-[120px] ">
+  <div class="max-w-6xl mx-auto">
+    <!-- Header -->
+    <div class=" flex flex-col pb-6 gap-2.5">
+      <h2 class=" scroll-animation text-[28px] lg:text-[40px] font-bold">
+        Case <span class="text-green-600">Study</span>
+      </h2>
+      <p class="scroll-animation text-gray-600 text-[15px] md:text-lg mt-1">
+        Transform your ideas into a distinctive web project that both inspires you and captivates your customers.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div id="filter-buttons" class="scroll-animation flex flex-wrap gap-3 mb-8">
+      <button data-filter="all" class=" cursor-pointer filter-btn bg-green-600 text-white px-5 py-2 rounded-full text-sm md:text-base">All</button>
+      <button data-filter="uiux" class="cursor-pointer filter-btn border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-[15px] md:text-base">UI/UX</button>
+      <button data-filter="dev" class="cursor-pointer filter-btn border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-[15px] md:text-base">Front-end Development</button>
+      <button data-filter="branding" class="cursor-pointer filter-btn border border-gray-300 text-gray-700 px-5 py-2 rounded-full text-[15px] md:text-base">Branding</button>
+
+    </div>
+
+    <!-- Project Cards Grid -->
+    <div id="project-grid" class="py-2 lg:py-9 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+
+
+
+
+      
+
+
+
+
+      <!-- Card 1 (UI/UX) -->
+      <div class="scroll-animation project-card transition-all duration-500 ease-in-out opacity-100 translate-y-0 block" data-category="uiux">
+        <div class="bg-white rounded-2xl shadow-lg h-[350px] overflow-hidden space-y-4">
+          <img src="/assest/images/caseStudy1.png" alt="Project" class="w-full h-40 object-cover">
+          <div class="p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+              <p>May - July 2017</p>
+                <i class="cursor-pointer fa-solid  fa-arrow-up-right-from-square text-[28px] text-green-500 lg:text-[24px] hover:text-gray-500"></i>
+            </div>
+            <h3 class="text-[19px] font-semibold">Grids & Alignment</h3>
+            <p class="text-sm text-gray-500">UX-UI • Web • Mobile</p>
+            <p class="text-[15.5px] text-gray-700">Clean layout system for digital product design.</p>
+          </div>
+        </div>
+      </div>
+
+       <!-- Card 2 (UI/UX) -->
+      <div class="scroll-animation project-card transition-all duration-500 ease-in-out opacity-100 translate-y-0 block" data-category="uiux">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden space-y-4">
+          <img src="/assest/images/caseStudy1.png" alt="Project" class="w-full h-40 object-cover">
+          <div class="p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+              <p>April - June 2020</p>
+              <i class="cursor-pointer fa-solid  fa-arrow-up-right-from-square text-green-500 hover:text-gray-500 hover:lg:text-gray-500 text-[28px] lg:text-[28px]"></i>
+            </div>
+            <h3 class="text-[19px] font-semibold">UI Kit</h3>
+            <p class="text-sm text-gray-500">Design System</p>
+            <p class="text-[15.5px] text-gray-700">Created a reusable design system for product teams.</p>
+          </div>
+        </div>
+      </div>
+
+      
+
+       
+
+
+      
+
+      
+
+      
+
+      
+
+
+       <div class="scroll-animation project-card transition-all duration-500 ease-in-out opacity-100 translate-y-0 block" data-category="dev">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden space-y-4">
+          <img src="/assest/images/caseStudy1.png" alt="Project" class="w-full h-40 object-cover">
+          <div class="p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+              <p>Jan - Mar 2021</p>
+             <i class="cursor-pointer fa-solid  fa-arrow-up-right-from-square text-green-500 text-[28px] lg:text-[28px] hover:text-gray-500"></i>
+            </div>
+            <h3 class="text-[19px] font-semibold">Web App Dev</h3>
+            <p class="text-sm text-gray-500">Dev • Full-stack</p>
+            <p class="text-[15.5px] text-gray-700">Full-stack development of a responsive SaaS product.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 (Dev) -->
+ <div class="scroll-animation project-card transition-all duration-500 ease-in-out opacity-100 translate-y-0 block" data-category="dev">
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden space-y-4">
+          <img src="/assest/images/caseStudy1.png" alt="Project" class="w-full h-40 object-cover">
+          <div class="p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+              <p>Jan - Mar 2021</p>
+             <i class="cursor-pointer fa-solid  fa-arrow-up-right-from-square text-green-500 text-[28px] lg:text-[28px] hover:text-gray-500"></i>
+            </div>
+            <h3 class="text-[19px] font-semibold">Web App Dev</h3>
+            <p class="text-sm text-gray-500">Dev • Full-stack</p>
+            <p class="text-[15.5px] text-gray-700">Full-stack development of a responsive SaaS product.</p>
+          </div>
+        </div>
+      </div>
+
+
+      
+
+  
+
+      
+      <!-- Card 2 (Branding) -->
+      <div class="scroll-animation project-card transition-all duration-500 ease-in-out opacity-100 translate-y-0 block" data-category="branding">
+        <div class="bg-white rounded-2xl shadow-lg h-[350px] overflow-hidden space-y-4">
+          <img src="/assest/images/caseStudy1.png" alt="Project" class="w-full h-40 object-cover">
+          <div class="p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+              <p>Aug - Sep 2018</p>
+              <i class="cursor-pointer fa-solid  fa-arrow-up-right-from-square text-green-500 text-[28px] lg:text-[28px] hover:text-gray-500"></i>
+            </div>
+            <h3 class="text-[19px] font-semibold">Brand Refresh</h3>
+            <p class="text-sm text-gray-500">Branding • Identity</p>
+            <p class="text-[15.5px] text-gray-700">Modern visual identity for a bold brand relaunch.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 (Branding) -->
+      <div class="scroll-animation project-card transition-all duration-500 ease-in-out opacity-100 translate-y-0 block" data-category="branding">
+        <div class="bg-white rounded-2xl shadow-lg h-[350px] overflow-hidden space-y-4">
+          <img src="/assest/images/caseStudy1.png" alt="Project" class="w-full h-40 object-cover">
+          <div class="p-4 space-y-2">
+            <div class="flex justify-between text-sm text-gray-500">
+              <p>Aug - Sep 2018</p>
+              <i class="cursor-pointer fa-solid  fa-arrow-up-right-from-square text-green-500 text-[28px] lg:text-[28px] hover:text-gray-500"></i>
+            </div>
+            <h3 class="text-[19px] font-semibold">Brand Refresh</h3>
+            <p class="text-sm text-gray-500">Branding • Identity</p>
+            <p class="text-[15.5px] text-gray-700">Modern visual identity for a bold brand relaunch.</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      
+
+
+
+      
+    
+
+
+
+
+      
+
+    </div>
+    
+
+    <!-- CTA -->
+    <div class="scroll-animation w-full pt-12 flex justify-center">
+      <a href="/src/work.html">
+        <button class="bg-green-600 text-white px-6 py-3 rounded-full font-semibold cursor-pointer hover:border-2 hover:border-green-300 transition-all duration-400 hover:bg-green-900 flex items-center gap-2">
+          All Projects 
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+<Section class="bg-green-50 px-[16px] md:px-[30px] lg:px-[100px] xl:px-[120px] md:flex-row   py-12 lg:py-28  ">
+  <div class="gap-[18px]   md:flex-row lg:gap-[70px]  flex flex-col justify-center">
+    <img class="scroll-animation w-full md:max-w-[350px] lg:max-w-[500px] " src="/assest/images/about-main6.jpg" class="h-[449px]">
+    <div class="flex flex-col gap-3 lg:gap-3">
+    <h2 class=" scroll-animation text-[38px] xl:text-[40px] font-bold pt-3 pb-0 lg:pb-7 md:pt-0">ABOUT <span class="text-green-700">ME</span> </h2>
+    <h4 class="scroll-animation text-[19px] xl:text-[24px] md:leading-[25px] lg:leading-[40px]">I’m  a <span class="text-green-600">UI/UX designer</span>  & <span class="text-green-600">Front-end Developer</span> based in Nigeria. Has Brand Designing background. </h4>
+    <p class="scroll-animation  pb-5 lg:pb-4  text-gray-500 text-[15.5px] xl:text-[18px]">I specialize in transforming complex ideas into user-friendly designs and developing responsive, accessible, and visually appealing interfaces. With a balance of creativity and technical skills, I bridge the gap between design and development to deliver products that are both functional and aesthetically engaging."</p>
+    <a class="scroll-animation "   href="/src/about.html"><button class="hover:border-2  transition-all duration-400 hover:border-green-300  hover:bg-green-900 bg-green-600 cursor-pointer flex justify-center items-center gap-1.5  text-gray-800 border-gray-400 border-1 rounded-3xl w-[139px] h-[44px]"><span class="text-gray-50 text-[16px] font-bold pb-1">More About</span></button></a>
+    </div>
+  </div>
+</Section>
+
+
+
+
+<section>
+<div class=" scoll-animation relative w-full px-[16px] md:px-[30px] lg:px-[100px] xl:px-[120px] py-12 lg:py-28">
+  <!-- Carousel Wrapper -->
+  <div class="flex flex-col gap-[22px] justify-center  overflow-hidden relative">
+          <div class="scroll-animation w-full text-center pb-0 lg:pb-14 ">  <h2 class="font-bold lg:text-[30px] xl:text-[40px] text-[28px]">Testimo<span class="text-green-600">nial</span></h2></div>
+    <!-- Slides Container -->
+    <div id="carousel" class="scroll-animation flex transition-transform duration-700 ease-in-out">
+      <h2></h2>
+      <!-- Testimonial 1 -->
+      <div class="flex flex-shrink-0 w-full ">
+
+        <div class= "border-1 border-gray-400 bg-green-500 text-white rounded-2xl shadow-lg p-6 flex flex-col gap-3 max-w-3xl mx-auto">
+          <i class="fa-solid fa-quote-left text-3xl text-amber-300"></i>
+          <p class="text-[15px] sm:text-base leading-relaxed">
+            “This platform completely transformed the way I work.  
+            The design, the responsiveness, and the overall experience are fantastic.”
+          </p>
+          <div class="flex items-center gap-4">
+            <img class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover" src="/assest/images/testimonial-img.png" alt="profile">
+            <div>
+              <h4 class="text-base font-bold">Jane Doe</h4>
+              <p class="text-xs text-gray-100">Product Designer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-green-500 text-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 max-w-3xl mx-auto">
+          <i class="fa-solid fa-quote-left text-3xl text-amber-300"></i>
+          <p class="text-[15x] sm:text-base leading-relaxed">
+            “I’ve tried many tools before, but none match the smooth  
+            experience I found here. Highly recommended for anyone!”
+          </p>
+          <div class="flex items-center gap-4">
+            <img class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover" src="/assest/images/testimonial-img.png" alt="profile">
+            <div>
+              <h4 class="text-base font-semibold">John Smith</h4>
+              <p class="text-xs text-gray-100">Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="flex-shrink-0 w-full px-4">
+        <div class="bg-green-500 text-white rounded-2xl shadow-lg p-6 flex flex-col gap-6 max-w-3xl mx-auto">
+          <i class="fa-solid fa-quote-left text-3xl text-amber-300"></i>
+          <p class="text-[15px] sm:text-base leading-relaxed">
+            “Great product! The support team is amazing and the  
+            carousel design adapts beautifully to all screen sizes.”
+          </p>
+          <div class="flex items-center gap-4">
+            <img class="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover" src="/assest/images/testimonial-img.png" alt="profile">
+            <div>
+              <h4 class="text-base font-semibold">Emily Johnson</h4>
+              <p class="text-xs text-gray-100">UI/UX Specialist</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button id="prev" class="cursor-pointer hidden md:block w-[40px] lg:w-[70px] h-[40px] lg:h-[70px]  absolute bottom-[50px] left-3 -translate-y-1/2 bg-green-500 hover:bg-white p-2 rounded-full shadow">
+      <i class="fa-solid fa-chevron-left text-gray-500"></i>
+    </button>
+    <button id="next" class="cursor-pointer hidden md:block w-[40px] lg:w-[70px] h-[40px] lg:h-[70px]  absolute bottom-[50px] right-3 -translate-y-1/2 bg-green-500 hover:bg-white p-2 rounded-full shadow">
+      <i class="fa-solid fa-chevron-right text-gray-500"></i>
+    </button>
+  </div>
+</div>
+</section>
+
+
+
+
+<section class="bg-green-50 text-[16px] lg:text-[20px] md:text-[18px] xl:text-[20px] w-full  px-[16px] md:px-[30px] lg:px-[150px] xl:px-[220px] py-12 lg:py-28">
+  <h2 class="scroll-animation px-6 text-[28px] lg:text-[36px] font-bold text-center mb-19 text-gray-800">Frequently Asked <span class="text-green-600">Questions</span></h2>
+  
+  <div class=" space-y-4">
+    <!-- FAQ Item -->
+    
+
+
+  <!-- FAQ Item -->
+    <div class="scroll-animation border border-gray-400 rounded-lg shadow-sm">
+      <button class="w-full min-h-[70px]  flex justify-between items-center p-4 text-left  font-medium text-gray-600 focus:outline-none faq-toggle">
+        <span>what do you offer?</span>
+        <svg class="cursor-pointer w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-600">
+        <p class="h-full pb-4">
+           I offer UI/UX design (research, wireframing, prototyping, and usability testing), web development (custom websites, e-commerce, CMS integration, SEO, and mobile optimization), and branding services (logo design, brand identity, style guides, and messaging) to create cohesive and functional digital experiences.
+        </p>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="scroll-animation border border-gray-400 rounded-lg shadow-sm">
+      <button class="w-full  min-h-[70px] flex justify-between items-center p-4 text-left  font-medium text-gray-600 focus:outline-none faq-toggle">
+        <span>What do you need to get started?</span>
+        <svg class="cursor-pointer w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-600">
+        <p class="h-full  pb-4">
+          I’ll need to know the project’s goals, design preferences, user experience details, web development requirements, branding elements, content/assets available, and any budget and timeline constraints to ensure we’re aligned and can execute effectively.
+        </p>
+      </div>
+    </div>
+
+
+
+    <!-- FAQ Item -->
+    <div class="scroll-animation border border-gray-400 rounded-lg shadow-sm">
+      <button class="w-full min-h-[70px] flex justify-between items-center p-4 text-left  font-medium text-gray-600 focus:outline-none faq-toggle">
+        <span>How do you handle communication throughout your project?</span>
+        <svg class="cursor-pointer w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-600">
+        <p class="h-full pb-4">
+          As a frontend developer, UI/UX designer, and branding designer, I prioritize clear and consistent communication throughout the project. I keep stakeholders updated with regular progress reports, design iterations, and user feedback, ensuring we align on vision and expectations. I encourage collaborative feedback loops, whether through design reviews, prototype testing, or code sprints, and use tools like Slack, Figma, and GitHub to maintain smooth communication and version control. This approach helps ensure that the design and development process stays agile, transparent, and on track.
+        </p>
+      </div>
+    </div>
+
+    <!-- FAQ Item -->
+    <div class="scroll-animation border border-gray-400 rounded-lg shadow-sm">
+      <button class="w-full min-h-[70px] flex justify-between items-center p-4 text-left  font-medium text-gray-600 focus:outline-none faq-toggle">
+        <span>Can you work with our existing style brand?</span>
+        <svg class="cursor-pointer w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-600">
+        <p class="h-full pb-4">
+          Yes, I can work with your existing brand style and assets by integrating your logos, color schemes, and typography into the design and development, ensuring consistency in both the user interface and experience while preserving and enhancing your brand identity.
+        </p>
+      </div>
+    </div>
+
+    
+
+    <!-- FAQ Item -->
+    <div class="scroll-animation border border-gray-400 rounded-lg shadow-sm">
+      <button class="w-full min-h-[70px] flex justify-between items-center p-4 text-left  font-medium text-gray-600 focus:outline-none faq-toggle">
+        <span>Do you offer website maintenance after the project?</span>
+        <svg class="cursor-pointer w-5 h-5 text-gray-500 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+      <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 text-gray-600">
+        <p class="h-full pb-4">
+        Absolutely, including design updates, technical support, security patches, and any necessary branding adjustments to keep the site running smoothly and aligned with your evolving needs.
+        </p>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+
+<section class="footer scroll-animation  justify-center flex-col px-[16px] lg:px-[0px]">
+<footer class="rounded-[18px] lg:rounded-[0px] px-[30px] py-[60px] lg:px-[100px] bg-green-600 text-white flex gap-[30px] lg:gap-[80px] flex-col lg:flex-row">
+  <div class=" flex  mt-[-14px] align-text-top   lg:w-[40%]  gap-6.5 flex-col  ">
+    
+    <h2 class="text-[24px] lg:text-[40px] font-semibold">Entrust Design to <span class="text-shadow-black font-black">Professional</span></h2>
+    <a href="/src/contazct.html"><button class="border-white border-0 hover:border-1 text-gray-800 hover:bg-green-600 transition-all duration-400 cursor-pointer hover:text-white rounded-[23px] bg-green-50 w-[139px] h-[44px] text-[14px]">Get Intouch <i class="fas fa-arrow-right"></i></button></a>
+  </div>
+
+
+  <div class="flex flex-col lg:gap-10.5">
+    <h3 class="font-bold text-[18px] ">Links</h3>
+    <div class="lg:flex-col flex gap-5">
+      <a class="hover:text-gray-700 text-[16px] " href="/index.html">Home</a>
+    <a class="hover:text-gray-700 text-[16px] " href="/src/work.html">Work</a>
+    <a class="hover:text-gray-700 text-[16px] " href="/src/about.html">About</a>
+    </div>
+  </div>
+
+
+  <div class="text-[14px] lg:gap-10.5 flex flex-col">
+    <h3 class="font-bold text-[18px]">Say Hello</h3>
+    <div class="flex flex-col lg:gap-2">
+    <a href="" class="w-[100%] underline text-gray-300 hover:text-gray-700">awajimimaowen@gmail.com</a>
+    <strong class="text-gray-50">+2348056879505</strong>
+    </div>
+  </div>
+
+  
+
+  <div class="flex flex-col w-[10%]   gap-2.5 lg:gap-10.5 ">
+    <h3 class="font-bold text-[18px] " >Socials</h3>
+      <div class="flex gap-6">
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-facebook-f text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-twitter text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-linkedin-in text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-github text-[16px] lg:text-[24px]"></i></a>
+      </div>
+  </div>
+
+  
+</footer>
+<div class="lg:bg-green-600 px-[16px] lg:px-[100px] lg:pt-18 lg:pb-5  w-full text-left font-light      text-gray-900 text-[12px] lg:text-[16px]"><span> 2025 Awajimima Obisike Owen. All Rights Reserved.</span></div>
+</section>
+
+
+  
+
+
+
+
+  
+<script type="module" src="/assest/javascript/potfolio.js"></script>
+
+  
+</body>
+</html>
+
+

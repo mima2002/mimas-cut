@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-f4b8T+QX6qC9nN2Fh3rjHptF77w4j+z/ZT6wU1r6ef5LkE8tEe/fM7kS76RmFJpMefG1xg5Tq8P4+cO7hNns7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="/assest/libary/fontawesome-free-6.7.2-web/css/all.min.css" />
+
+  <link href="/src/output.css" rel="stylesheet">
+  <title>Portfolio</title>
+
+  <style>
+        .room-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #FBBF24;
+        }
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .hero-btn:hover {
+            transform: scale(1.1);
+        }
+
+        /* Mobile menu positioning */
+       
+
+        /* Navbar button and hamburger styling */
+        #menuButton {
+            z-index: 60;
+        }
+
+        /* Ensure the hamburger is always visible */
+        .hamburger-container {
+            position: relative;
+            z-index: 60;
+        }
+    </style>
+
+</head>
+
+    
+
+<body class="font-sans bg-white">
+
+    <!-- Navbar -->
+    <nav class="bg-yellow-700 text-white px-6 lg:px-[120px] py-4 lg:py-7">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class=" text-[14px] lg:text-2xl font-bold">Brokers Hotel</div>
+            <!-- Desktop Menu -->
+            <div class="bg-yellow-700 space-x-4 hidden md:flex mr-[70px] gap-10">
+                <a href="/index.html" class="nav-link">Home</a>
+                <a href="/src/about.html" class="nav-link">About</a>
+                <a href="/src/contact.html" class="nav-link">Contact</a>
+                <a href=" #booking" class="nav-link">Book Now</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="text-[14px] md:hidden hamburger-container">
+                <button id="menuButton" class="text-white">
+                    <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <div id="mobileMenu" class="text-[14px] pl-6 left-0 right-0 z-100 w-full flex flex-col py-7 absolute bg-yellow-700 hidden md:hidden mobile-menu gap-4">
+            <a href="/index.html" class="nav-link">Home</a>
+            <a href="/src/about.html" class="nav-link">About</a>
+            <a href="/src/contact.html" class="nav-link">Contact</a>
+            <a href="/index.html#booking" class="nav-link">Book Now</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class=" bg-cover bg-center h-[100%] py-9 lg:py-0 md:h-screen relative" style="background-image: url('/assest/images/hotel-hero.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class=" hero-content relative z-10 text-white">
+            <h1 class=" text-[34px] lg:text-[60px] pt-3   font-extrabold px-[18px]  lg:px-[150px] mb-3 lg:mb-4">Welcome to Brokers Hotel</h1>
+            <p class=" text-[14px] lg:text-xl mb-5 px-[14px] lg:px-[250px]">Relax, unwind, and make lasting memories. Experience unmatched comfort, luxury, and warm hospitality </p>
+            <a href="#rooms" class="scroll-animation translate-2.5 hero-btn text-[15px] lg:text-[20px] bg-yellow-700 rounded-[25px] lg:rounded-[35px] py-2 px-6  lg:py-4 lg:px-9">Explore Rooms</a>
+        </div>
+    </header>
+
+    <!-- Rooms Section -->
+    <section id="rooms" class=" py-14 px-[16px] md:px-[100px]">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="scroll-animation text-[26px]  lg:text-4xl font-bold mb-3 lg:pb-8 ">Our <span class="text-yellow-800">Rooms</span></h2>
+            <p class="scroll-animation mb-12 text-gray-800 text-[14px] lg:text-lg px-4 lg:px-41">Choose from a range of rooms tailored to fit your needs and comfort. Each room is designed to offer the best experience during your stay.</p>
+            <div class="scroll-animation grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Single Room Card -->
+                <div class=" room-card bg-white shadow-lg rounded-lg p-6">
+                    <img src="/assest/images/single-room.jpg" alt="Single Room" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Single Room</h3>
+                    <p class="text-gray-500  mb-6 lg:mb-7 list-disc ">Perfect for solo travelers, the Single Room offers all the essentials for a comfortable stay.</p>
+                    <ul class="text-left text-gray-700">
+                        <li>1 Single Bed</li>
+                        <li>Private Bathroom</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                    </ul>
+                </div>
+                <!-- Double Room Card -->
+                <div class="room-card bg-white shadow-lg rounded-lg p-6">
+                    <img src="/assest/images/double-room.jpg" alt="Double Room" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Double Room</h3>
+                      <p class="text-gray-500  mb-6 lg:mb-7 list-disc ">Ideal for couples or friends, the Double Room offers extra space and comfort.</p>
+                    <ul class="text-left text-gray-700">
+                        <li>1 Double Bed</li>
+                        <li>Private Bathroom</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                    </ul>
+                </div>
+                <!-- Suite Room Card -->
+                <div class="room-card bg-white shadow-lg rounded-lg p-6">
+                    <img src="/assest/images/suite.jpg" alt="Suite Room" class="w-full h-48 object-cover mb-4 rounded-lg">
+                    <h3 class="text-xl font-semibold mb-2">Suite Room</h3>
+                       <p class="text-gray-500  mb-6 lg:mb-7 list-disc ">Our luxurious Suite Room provides a spacious and elegant stay for those seeking extra comfort.</p>
+                    <ul class="text-left text-gray-700">
+                        <li>1 King-size Bed</li>
+                        <li>Private Bathroom with Bathtub</li>
+                        <li>Free Wi-Fi</li>
+                        <li>Air Conditioning</li>
+                        <li>Room Service</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form Section -->
+    <section id="booking" class="bg-gray-50 py-20 px-[16px] md:px-[100px]">
+        <div class="max-w-7xl mx-auto  text-center">
+            <h2 class="scroll-animation text-[26px] lg:text-4xl font-bold mb-8">Book <span class="text-yellow-800">Your</span> Stay</h2>
+            <form id="bookingForm" class="space-y-6 max-w-lg mx-auto ">
+                <input type="text" id="name" name="name" placeholder="Full Name" class="scroll-animation w-full px-4 py-2 border rounded-lg" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" class="scroll-animation w-full px-4 py-2 border rounded-lg" required>
+                <div class="scroll-animation flex space-x-4">
+                    <input type="date" id="checkin" name="checkin" class="w-1/2 px-2 py-2 lg:px-4 border rounded-lg" required>
+                    <input type="date" id="checkout" name="checkout" class="w-1/2 px-2 lg:px-4 py-2 border rounded-lg" required>
+                </div>
+                <select id="room" name="room" class="scroll-animation w-full px-4  py-2 border rounded-lg" required>
+                    <option value="">Select Room Type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite Room</option>
+                </select>
+                <button type="button" id="confirmBookingButton" class="scroll-animation bg-yellow-700 text-white px-6 py-3 rounded-full w-full">Confirm Booking</button>
+            </form>
+        </div>
+    </section>
+  
+  <!-- Popup Modal for Confirmation -->
+    <div id="confirmationModal" class="fixed inset-0 px-[16px] flex justify-center items-center bg-gray-750 bg-opacity-50 hidden">
+        <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+            <h3 class="text-2xl font-bold mb-4">Confirm Your Booking</h3>
+            <div id="modal-content" class="text-left mb-4">
+                <!-- Dynamic content goes here -->
+            </div>
+            <div class="flex justify-between">
+                <button id="cancelModalButton" class="bg-gray-500 text-white px-6 py-2 rounded-full">Cancel</button>
+                <a href="payment.html" id="proceedToPaymentButton" class="bg-yellow-600 text-black px-6 py-2 rounded-full">Proceed to Payment</a>
+            </div>
+        </div>
+    </div>
+
+  
+
+    <!-- Footer -->
+  <section class="footer  justify-center flex-col  lg:px-[0px]">
+<footer class=" lg:rounded-[0px] px-[30px] py-[60px] lg:px-[100px] bg-yellow-800 text-white flex gap-[30px] lg:gap-[80px] flex-col lg:flex-row">
+  <div class=" flex  mt-[-14px] align-text-top   lg:w-[40%]  gap-6.5 flex-col  ">
+    
+    <h2 class="text-[24px] lg:text-[40px] font-semibold"><span class="text-shadow-black font-black">Brokers Hotel</span></h2>
+    <a href="/src/contact.html"><button class="border-white border-0 hover:border-1 text-gray-800 hover:bg-yellow-600 transition-all duration-400 cursor-pointer hover:text-white rounded-[23px] bg-green-50 w-[139px] h-[44px] text-[14px]">Reach Out <i class="fas fa-arrow-right"></i></button></a>
+  </div>
+
+
+  <div class="flex flex-col lg:gap-10.5">
+    <h3 class="font-bold text-[18px] ">Links</h3>
+    <div class="lg:flex-col flex gap-5">
+      <a class="hover:text-gray-700 text-[16px] " href="/index.html">Home</a>
+    <a class="hover:text-gray-700 text-[16px] " href="/src/contact.html">Contact</a>
+    <a class="hover:text-gray-700 text-[16px] " href="/src/about.html">About</a>
+    </div>
+  </div>
+
+
+  <div class="text-[14px] lg:gap-10.5 flex flex-col">
+    <h3 class="font-bold text-[18px]">contact</h3>
+    <div class="flex flex-col lg:gap-2">
+    <a href="" class="w-[100%] underline text-gray-300 hover:text-gray-700">awajimimaowen@gmail.com</a>
+    <strong class="text-gray-50">+2348056879505</strong>
+    </div>
+  </div>
+
+  
+
+  <div class="flex flex-col w-[10%]   gap-2.5 lg:gap-10.5 ">
+    <h3 class="font-bold text-[18px] " >Socials</h3>
+      <div class="flex gap-6">
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-facebook-f text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-twitter text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-linkedin-in text-[16px] lg:text-[24px]"></i></a>
+        <a href="#" class="text-gray-900 hover:text-white text-lg"><i class="fab fa-github text-[16px] lg:text-[24px]"></i></a>
+      </div>
+  </div>
+
+  
+</footer>
+</section>
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Elements
+        const menuButton = document.getElementById('menuButton');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const hamburgerIcon = document.getElementById('hamburgerIcon');
+
+        if (menuButton && mobileMenu && hamburgerIcon) {
+            menuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+                const isHidden = mobileMenu.classList.contains('hidden');
+                if (isHidden) {
+                    hamburgerIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>';
+                    menuButton.setAttribute('aria-expanded', 'false');
+                } else {
+                    hamburgerIcon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>';
+                    menuButton.setAttribute('aria-expanded', 'true');
+                }
+            });
+        }
+
+        // Random date helpers (ensure checkout after checkin)
+        function getRandomDateWithinMonths(monthsAhead = 3) {
+            const start = new Date();
+            const end = new Date();
+            end.setMonth(start.getMonth() + monthsAhead);
+            return new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
+        }
+        function formatDate(d) {
+            return d.toISOString().split('T')[0];
+        }
+
+        const checkinEl = document.getElementById('checkin');
+        const checkoutEl = document.getElementById('checkout');
+        if (checkinEl && checkoutEl) {
+            const ci = getRandomDateWithinMonths();
+            // ensure checkout is at least 1 day after checkin (up to +7 days)
+            const stayDays = 1 + Math.floor(Math.random() * 7);
+            const co = new Date(ci);
+            co.setDate(ci.getDate() + stayDays);
+            checkinEl.value = formatDate(ci);
+            checkoutEl.value = formatDate(co);
+        }
+
+        // Booking modal and validation
+        const confirmButton = document.getElementById('confirmBookingButton');
+        const modal = document.getElementById('confirmationModal');
+        const cancelModalButton = document.getElementById('cancelModalButton');
+        const modalContent = document.getElementById('modal-content');
+        const proceedToPaymentButton = document.getElementById('proceedToPaymentButton');
+
+        if (confirmButton && modal && cancelModalButton && modalContent) {
+            confirmButton.addEventListener('click', () => {
+                const name = (document.getElementById('name') || {}).value || '';
+                const email = (document.getElementById('email') || {}).value || '';
+                const checkin = (document.getElementById('checkin') || {}).value || '';
+                const checkout = (document.getElementById('checkout') || {}).value || '';
+                const room = (document.getElementById('room') || {}).value || '';
+
+                // Basic validation
+                if (!name || !email || !checkin || !checkout || !room) {
+                    alert('Please complete all booking fields before confirming.');
+                    return;
+                }
+                if (new Date(checkout) <= new Date(checkin)) {
+                    alert('Check-out must be after check-in.');
+                    return;
+                }
+
+                modalContent.innerHTML = `
+                    <p><strong>Name:</strong> ${name}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Check-in:</strong> ${checkin}</p>
+                    <p><strong>Check-out:</strong> ${checkout}</p>
+                    <p><strong>Room:</strong> ${room.charAt(0).toUpperCase() + room.slice(1)} Room</p>
+                `;
+
+                if (proceedToPaymentButton) {
+                    const params = new URLSearchParams({ name, email, checkin, checkout, room });
+                    proceedToPaymentButton.href = 'payment.html?' + params.toString();
+                }
+
+                modal.classList.remove('hidden');
+            });
+
+            cancelModalButton.addEventListener('click', () => modal.classList.add('hidden'));
+            // click outside to close
+            modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.add('hidden'); });
+        }
+    });
+    </script>
+
+
+
+
+  
+
+<script type="module" src="/assest/javascript/work.js"></script>
+  
+</body>
+</html>
+
+
