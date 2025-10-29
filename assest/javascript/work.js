@@ -1,22 +1,7 @@
 //   sticky navbar
 
 
-// navScroll.js
-export function initNavScrollColor(navSelector = '.nav', scrollThreshold = 50) {
-  const nav = document.querySelector(navSelector);
-  if (!nav) return;
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > scrollThreshold) {
-      nav.classList.add('bg-green-50', 'shadow-lg');
-      nav.classList.remove('bg-white');
-    } else {
-      nav.classList.add('bg-white');
-      nav.classList.remove('bg-green-50', 'shadow-lg');
-    }
-  });
-}
-initNavScrollColor('.nav'); // Default scroll threshold = 50px
 
 
 

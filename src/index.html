@@ -13,9 +13,12 @@
   <title>Portfolio</title>
 
   <style>
+
+
     .custom-spin {
         @apply animate-spin;
         animation-duration: 10s;
+        
     }
     @keyframes rotate-forward {
        0% {
@@ -58,6 +61,7 @@
     }
     .nav {
       z-index: 999;
+      
     }
         .room-card:hover {
             transform: scale(1.05);
@@ -79,6 +83,8 @@
             padding: 20px;
           z-index: 0;
         }
+
+        
         
         .hero-btn:hover {
             transform: scale(1.1);
@@ -96,6 +102,8 @@
         .hamburger-container {
             position: relative;
             z-index: 1000;
+            
+
         }
     </style>
 
@@ -103,57 +111,84 @@
 
     
 
-<body class="font-sans bg-transparent">
-    <section class="relative nav-and-hero bg-cover bg-center bg-black/80 opacity-300 " style="background-image: url('/assest/images/high\ taper11.jpg');" >
-        <span class="h-full w-full left-0 right-0 bg-black/40 absolute"></span>
+<body class="font-sans bg-transparent flex flex-col">
+         <span class="bg-cover bg-center  h-full w-full left-0 right-0 bg-black/80 absolute " style="background-image: url('/assest/images/styles.jpg ');"></span>
+
     <!-- Navbar -->
-    <nav class=" z-50 bg-transparent  text-white px-6 lg:px-[120px] py-6 lg:py-7  sticky top-0" style="background-image: url('/assest/images/hotel-hero.jpg');">
+    <nav class=" z-50 bg-black lg:bg-transparent  text-white px-6 lg:px-[120px] py-5 lg:py-7  sticky lg:relative top-0" style="background-image: url('/assest/images/hotel-hero.jpg');">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class=" text-[17px] lg:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 ">mima's Cut <i class="fas fa-cut scale-animation text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 "></i></div>
+            <div class=" text-[17px] lg:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 ">Mima's Cut <i class="fas fa-crown scale-animation text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 "></i></div>
             <!-- Desktop Menu -->
             <div class="bg-transparent space-x-4 hidden md:flex mr-[70px] gap-10" style="background-image: url('/assest/images/hotel-hero.jpg');">
                 <a href="/index.html" class="nav-link">Home</a>
-                <a href="/src/about.html" class="nav-link">About</a>
-                <a href="/src/works.html" class="nav-link">Works</a>
-                <a href="/src/service.html" class="nav-link">Service</a>
+                <a href="/src/about.html" class="action-link nav-link">About</a>
+                <a href="/src/works.html" class="action-link nav-link">Works</a>
+                <a href="/src/service.html" class="action-link nav-link">Service</a>
             </div>
             <!-- Mobile Menu Button -->
             <div class="text-[14px] md:hidden hamburger-container">
                 <button id="menuButton" class="text-white">
-                    <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg id="hamburgerIcon" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                     </svg>
                 </button>
             </div>
         </div>
         <div id="mobileMenu" class="text-[14px] pl-6 left-0 right-0 z-100 w-full flex flex-col py-7 absolute bg-black hidden md:hidden mobile-menu gap-4">
+          
             <a href="/index.html" class="nav-link">Home</a>
-            <a href="/src/about.html" class="nav-link">About</a>
-                <a href="/src/works.html" class="nav-link">Works</a>
-            <a href="/src/service.html" class="nav-link">Service</a>
+            <a href="/src/about.html" class="action-link nav-link">About</a>
+                <a href="/src/works.html" class="action-link nav-link">Works</a>
+            <a href="/src/service.html" class="action-link nav-link">Service</a>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="z-0 bg-cover bg-transparent flex  bg-center max-h-screen md:max-h-screen  h-[85vh]  lg:py-0 md:h-screen relative" >
+    <header class="z-0 bg-cover bg-transparent flex pt-4  bg-center  h-[75vh] lg:h-[83vh] lg:py-0  relative" >
         <div class="absolute inset-0 "></div>
-        <div class=" hero-content relative flex   z-10 text-white">
-            <h1 class=" text-[38px] lg:text-[60px] text-center md:text-center     font-extrabold px-[18px]  lg:px-[150px] mb-3 lg:mb-4 ">Your look My Priority <i class="fas fa-scissors text-4xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50  rotate-animation"></i></h1>
-            <p class=" text-[14.5px] text-center md:text-center  lg:text-xl mb-5 lg:mb-14 px-[18px] lg:px-[235px] text-gray-300 lg:leading-7.5 leading-5.5"> Experience that goes beyond the chair. step in for more than just a haircut (Experience - Transformation) Relax, unwind, and make lasting memories.  </p>
-           <div class=" px-[10px] lg:px-[225px] w-full flex justify-center md:justify-center " > <a href="#book" class="scroll-animation  hero-btn text-[17px] lg:text-[20px]    bg-purple-700   rounded-[25px] lg:rounded-[35px] py-4 px-8  lg:py-4 lg:px-9">Book Service</a></div>
+        <div class=" hero-content relative flex    z-10 text-white">
+            <h1 class=" text-[34px] lg:text-[60px] text-center md:text-center     font-extrabold px-[18px]  lg:px-[150px] mb-1 lg:mb-4 ">Your look My Priority <i class="fas fa-scissors text-4xl lg:text-9xl text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50  rotate-animation"></i></h1>
+            <p class=" text-[14.5px] text-center md:text-center  lg:text-xl mb-5 lg:mb-14 px-[18px] lg:px-[235px] text-gray-400 lg:leading-7.5 leading-5.5"> Experience that goes beyond the chair. step in for more than just a haircut (Experience - Transformation) Relax, unwind, and make lasting memories.  </p>
+           <div class=" px-[10px] lg:px-[225px] w-full flex justify-center md:justify-center " > <a href="#book" class="scroll-animation  hero-btn text-[17px] lg:text-[20px]    bg-purple-700   rounded-[25px] lg:rounded-[35px] py-3 px-7  lg:py-4 lg:px-9">Book Service</a></div>
         </div>
     </header>
+
+
+
+     <!---Opening hours-->
+    <section class="bg-black px-[16px] flex-col lg:px-[120px] py-14 md:py-25  flex ">
+        <h2 class="scroll-animation text-[28px] lg:text-[34px] text-left lg:text-center font-bold lg:pb-14 pb-5 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-900 to-purple-500 ">Opening Hours <i class="fas fa-clock flex md:hidden animate-spin text-purple-600"></i></h2>
+        <div class="scroll-animation text-center justify-center flex flex-col align-middle w-full ">
+            
+            <div class=" lg:gap-60 gap-2 flex flex-col-reverse md:flex-row align-middle  items-stretch lg:items-center  w-full lg:w-full  h-max">
+                <ul class="flex flex-col text-gray-400  gap-3 lg:gap-6 justify-center align-middle ">
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl border-purple-800 lg:text-[16px] text-left"><i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Monday: </span> 7: 30am - 8: 00pm</li>
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl  border-purple-800 lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Tuesday: </span> 7: 30am - 8: 00pm</li>
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl border-purple-800 lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Wednsday: </span> 7: 30am - 8: 00pm</li>
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl border-purple-800 lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Thursday: </span> 7: 30am - 8: 00pm</li>
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl border-purple-800 lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4"></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Friday: </span> 7: 30am - 8: 00pm</li>
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl border-purple-800 lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Saturday: </span> 7: 30am - 8: 00pm</li>
+                    <li class="scroll-animation text-[14px] py-3 px-6 w-full h-max border-1 rounded-2xl border-purple-800 lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4"></i><span class="text-gray-300 font-medium text-[16px] lg:text-[18px]">Sunday: </span> 12: 30am - 8: 00pm</li>
+                </ul>
+                <div class="h-full lg:flex hidden align-middle"><i class="fas fa-clock text-[50px] lg:text-[406px]  text-transparent bg-clip-text bg-gradient-to-r from bg-purple-900 to-purple-800  flex lg:flex animate-spin"></i></div>
+                
+            </div>
+            
+            
+        </div>
     </section>
+
+
 
 
         
 <!--price plans-->
 
-    <h2 class="lg:text-[40px] px-[16px] lg:px-[120px] font-bold md:py-2 py-1 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-900 to-purple-400 pt-15 lg:pt-22 text-[28px]">Pick a Plan <i class="fas fa-clipboard-list"></i></h2>
-     <section class="grid grid-cols-1 md:grid-cols-3 px-[16px] md:px-[120px] py-6 md:py-12 gap-8 pb-12 lg:pb-25">
+    <h2 class="animation-scroll lg:text-[40px] px-[16px] lg:px-[120px] font-bold md:py-2 py-1 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-900 to-purple-400 pt-8 lg:pt-22 text-[28px]">Pick a Plan <i class="fas fa-clipboard-list"></i></h2>
+     <section class=" scroll-animation z-0 grid grid-cols-1 md:grid-cols-3 px-[16px] md:px-[120px] py-2 md:py-12 gap-8 pb-12 lg:pb-25">
         
 
-         <div class="flex flex-col h-max w-full py-6 px-7 gap-0 rounded-2xl  border-2 border-purple-500">
+         <div class="animation-scroll flex flex-col h-max w-full py-6 px-7 gap-0 rounded-2xl  border-2 border-purple-500">
             <h1 class="text-[24px] lg:text-[26px] pb-2 font-medium">C - Class <i class="fas fa-user text-purple-700"></i></h1>
             <p class="text-gray-600">Traditional barbing Technics for a timeless look, Includes consultation</p>
             <div class="flex items-center justify-between gap-15 py-4"> <span class="text-purple-600 font-bold text-[20px]">&#8358;7,000</span> <span><i class="fas fa-plane text-gray-600"> </i> Any Where</span></div>
@@ -162,7 +197,7 @@
             <a href="#book" class="w-full cursor-pointer"><button class="cursor-pointer h-max w-full bg-purple-700 border-2 border-purple-900  px-4 py-2 mt-3 text-white">Book Now</button></a>
          </div>
 
-         <div class="flex flex-col h-max w-full py-6 px-7 gap-0 rounded-2xl  border-2 border-purple-500">
+         <div class="animation-scroll flex flex-col h-max w-full py-6 px-7 gap-0 rounded-2xl  border-2 border-purple-500">
             <h1 class="text-[24px] lg:text-[26px] pb-2 font-medium">E - Class <i class="fas fa-gem text-purple-700"></i></h1>
             <p class="text-gray-600">Traditional barbing Technics for a timeless look, Includes consultation</p>
             <div class="flex items-center justify-between gap-15 py-4"> <span class="text-purple-600 font-bold text-[20px]">&#8358;15,000</span> <span><i class="fas fa-plane text-gray-600"> </i> Anywhere</span></div>
@@ -174,7 +209,7 @@
             <a href="#book" class="w-full cursor-pointer"><button class="cursor-pointer h-max w-full bg-purple-700 border-2 border-purple-900  px-4 py-2 mt-3 text-white">Book Now</button></a>
          </div>
 
-         <div class="flex flex-col h-max w-full py-6 px-7 gap-0 rounded-2xl  border-2 border-purple-500">
+         <div class="animation-scroll flex flex-col h-max w-full py-6 px-7 gap-0 rounded-2xl  border-2 border-purple-500">
             <h1 class="text-[24px] lg:text-[26px] pb-2 font-medium">Vip  <i class="fas fa-crown text-purple-700"></i></h1>
             <p class="text-gray-600">Traditional barbing Technics for a timeless look, Includes consultation</p>
             <div class="flex items-center justify-between gap-15 py-4"> <span class="text-purple-600 font-bold text-[20px]">&#8358;50,000</span> <span><i class="fas fa-plane text-gray-600"> </i> Anywhere</span></div>
@@ -195,40 +230,18 @@
     </section>
 
 
-    <!---Opening hours-->
-    <section class="px-[16px] flex-col lg:px-[120px] py-10 md:py-25  flex justify-center">
-        <h2 class="scroll-animation text-[28px] lg:text-[34px] text-left lg:text-center font-bold lg:pb-14 pb-5 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-900 to-purple-500 ">Opening Hours <i class="fas fa-clock flex md:hidden animate-spin text-purple-600"></i></h2>
-        <div class="scroll-animation text-center justify-center flex flex-col align-middle w-full ">
-            
-            <div class=" lg:gap-60 gap-2 flex flex-col-reverse md:flex-row align-middle w-full lg:w-full  h-max">
-                <ul class="flex flex-col text-gray-600  gap-3 lg:gap-6 justify-center align-middle ">
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"><i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Monday: </span> 7: 30am - 8: 00pm</li>
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Tuesday: </span> 7: 30am - 8: 00pm</li>
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Wednsday: </span> 7: 30am - 8: 00pm</li>
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Thursday: </span> 7: 30am - 8: 00pm</li>
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4"></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Friday: </span> 7: 30am - 8: 00pm</li>
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4 "></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Saturday: </span> 7: 30am - 8: 00pm</li>
-                    <li class="scroll-animation text-[14px] lg:text-[16px] text-left"> <i class="fas fa-check-to-slot text-purple-700 lg:pr-6 pr-4"></i><span class="text-black font-medium text-[16px] lg:text-[18px]">Sunday: </span> 12: 30am - 8: 00pm</li>
-                </ul>
-                <div class="h-full lg:flex hidden align-middle"><i class="fas fa-clock text-[50px] lg:text-[406px]  text-transparent bg-clip-text bg-gradient-to-r from bg-purple-900 to-purple-800  flex lg:flex animate-spin"></i></div>
-                
-            </div>
-            
-            
-        </div>
-    </section>
-
+   
 
 
     <!--About-->
 <section class="px-[16px] lg:px-[120px] py-14 lg:py-20 bg-black mb-7 lg:mb-16 md:pb-26 text-white ">
-                <h2 class="lg:text-[40px] font-bold md:py-3 py-1 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-800 to-purple-50 text-[30px]">About <i class="fas fa-user-tie"></i> <i class="fas fa-scissors"></i> </i></h2>
+                <h2 class="scroll-animation lg:text-[40px] font-bold md:py-3 py-1 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-800 to-purple-50 text-[30px]">About <i class="fas fa-user-tie"></i> <i class="fas fa-scissors"></i> </i></h2>
 
-    <span class="text-[16px] lg:text-[24px]  font-medium " >Since 2020</span>
-    <p class="text-[16px] md:text-[20px]  py-6 text-gray-300"> I'm here to bring the salon to you. With years of experience as a professional hairstylist, I specialize in providing personalized, on-demand hair services right in the comfort of your own home. Whether you're looking for a quick trim, a brand-new hairstyle, or a luxurious hair treatment, I’ve got you covered. Plus if you need a luxurious barbing saloon i still got you covered
+    <h2 class="scroll-animation text-[16px] lg:text-[24px]  font-medium " >Since 2020</h2>
+    <p class="scroll-animation text-[16px] md:text-[20px]  py-6 text-gray-300"> I'm here to bring the salon to you. With years of experience as a professional hairstylist, I specialize in providing personalized, on-demand hair services right in the comfort of your own home. Whether you're looking for a quick trim, a brand-new hairstyle, or a luxurious hair treatment, I’ve got you covered. Plus if you need a luxurious barbing saloon i still got you covered
  </p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
-      <a href="/src/about.html"> <button  class="cursor-pointer h-max w-max bg-purple-800 border-1  text-gray-200 px-6 py-2 mt-3">More About</button></a> 
+    <div class="scroll-animation grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
+      <a href="/src/about.html" class="action-link cursor-pointer h-max w-max bg-purple-800 border-1  text-gray-200 px-6 py-2 mt-3">More About</a> 
 
 
    
@@ -247,30 +260,30 @@
     <!--Category -->
     <section class="px-[16px] lg:px-[120px] py-5 lg:py-10   ">
             
-    <span class="text-[16px] lg:text-[22px]  font-medium text-purple-800" >What We Do</span>
-    <h2 class="lg:text-[40px] font-bold md:py-3 py-1 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 text-[30px]">Service <i class="fas fa-clipboard-list"></i></h2>
-    <p class="text-[16px]  pb-6">Our objectives is to provide grooming service to our patrons in a tranquil and classy </p>
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
-    <div class="flex gap-4  rounded-2xl  flex-col text-center text-white justify-center items-center content-center  bg-purple-800 w-full h-max-content py-10 lg:py-12 px-[24px] lg:px-[30px]" style="background-image: url('/assest/images/taper-backnick1.jpg ');" >
+    <h2 class="scroll-animation text-[16px] lg:text-[22px]  font-medium text-purple-800" >What We Do</h2>
+    <h2 class="scroll-animation lg:text-[40px] font-bold md:py-3 py-1 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 text-[30px]">Service <i class="fas fa-clipboard-list"></i></h2>
+    <p class="scroll-animation text-[16px]  pb-6">Our objectives is to provide grooming service to our patrons in a tranquil and classy </p>
+    <div class=" grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10">
+    <div class="scroll-animation flex gap-4  rounded-2xl  flex-col text-center text-white justify-center items-center content-center  bg-purple-800 w-full h-max-content py-10 lg:py-12 px-[24px] lg:px-[30px]" style="background-image: url('/assest/images/taper-backnick1.jpg ');" >
         <i class="fas fa-scissors text-[34px]"></i> 
         <h2 class="text-white text-[22px] font-bold">Hairy Affairs</h2>
         <p class="text-gray-100">We believe your hair should reflect your unique style.</p>
-  <a href="/src/service.html#hairaffairs"> <button class="cursor-pointer h-max w-max bg-purple-600 border-2  px-4 py-2 mt-3">Explore</button></a> 
+  <a href="/src/service.html#hairaffairs" class="action-link cursor-pointer h-max w-max bg-purple-600 border-2  px-4 py-2 mt-3">Explore</a> 
     </div>
 
    
 
-    <div class="flex rounded-2xl gap-4 flex-col text-center items-center text-white justify-center content-center  bg-purple-800 w-full h-max-content py-10 lg:py-12 px-[16px] lg:px-[30px]" style="background-image: url('/assest/images/nike2.jpg ');" >
+    <div class="scroll-animation flex rounded-2xl gap-4 flex-col text-center items-center text-white justify-center content-center  bg-purple-800 w-full h-max-content py-10 lg:py-12 px-[16px] lg:px-[30px]" style="background-image: url('/assest/images/nike2.jpg ');" >
         <i class="fas fa-pills text-[34px]"></i> 
         <h2 class="text-white text-[22px] font-bold">Treatments & Facials</h2>
         <p class="text-gray-100">We believe your hair should reflect your unique style.</p>
-   <a href="/src/service.html#treatment&facials"> <button class="cursor-pointer h-max w-max bg-purple-600 border-2  px-4 py-2 mt-3">Explore</button></a>
+   <a href="/src/service.html#treatment&facials" class="cursor-pointer h-max w-max bg-purple-600 border-2  px-4 py-2 mt-3">Explore</a>
     </div>
 
    
 
     </div>
-            <div class=" px-[-10px] lg:px-[225px]  py-10 pt-12 w-full flex justify-baseline md:justify-center " > <a href="/src/service.html" class="cursor-pointer scroll-animation hero-btn text-[15px] lg:text-[20px] bg-purple-600   border-1 border-purple-950 py-2 px-6 text-white  lg:py-4 lg:px-9"><span class="font-medium">All Services </span></a></div>
+            <div class="scroll-animation px-[-10px] lg:px-[225px]  py-10 pt-12 w-full flex justify-baseline md:justify-center " > <a href="/src/service.html" class="action-link cursor-pointer scroll-animation hero-btn text-[15px] lg:text-[20px] bg-purple-600   border-1 border-purple-950 py-2 px-6 text-white  lg:py-4 lg:px-9"><span class="font-medium">All Services </span></a></div>
 
     </section>
 
@@ -279,21 +292,20 @@
 
     <!--Gallary-->
     <section class="bg-black">
-        <div class="flex justify-center text-center py-11 lg:py-27 flex-col  px-[16px] lg:px-[100px]">
+        <div class="flex justify-center items-center text-center py-11 lg:py-27 flex-col  px-[16px] lg:px-[100px] ">
             <h2 class="scroll-animation text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-400  text-[28px] lg:text-4xl font-bold pb-8 lg:pb-14"><span class=" w-3.5 h-2 pb-4 text-transparent bg-clip-text bg-gradient-to-r from bg-purple-700 to-purple-50 "><i class="fas fa-scissors text-[14px] "></i> </span>Recent <span class="text-purple-700">works </span><i class="fas fa-scissors text-[14px]"></i> </h2>
            
                 
                 
-                <ul class="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-6">
-                        <li class="scroll-animation relative" > <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white rounded-[8px]" >Waves <i class="fas fa-scissors text-purple-900"></i></span><img class="h-[400px] lg:h-[400px] w-full object-cover"  src="/assest/images/barbing waves 2.jpg" ><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name:  Eze <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star text-amber-300"></i><br> Service: Waves <i class="fas fa-water text-blue-400"></i> </span></li>
-                        <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">Waves <i class="fas fa-scissors text-purple-900"></i></span><img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/barbing waves3.jpg "><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Joshep <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star-half-alt text-amber-300"></i><br> Service: Waves <i class="fas fa-water text-blue-400"></i> </span></li>
+                    <ul class="grid grid-cols-1 lg:grid-cols-3 gap-7 lg:gap-6">
+                        <li class="scroll-animation relative" > <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white" >Low Taper <i class="fas fa-scissors text-purple-900"></i></span><img class="h-[400px] lg:h-[400px] w-full object-cover"  src="/assest/images/male-hair1.jpg" ><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name:  Eze <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star text-amber-300"></i><br> Service: VIP <i class="fas fa-crown text-amber-400"></i> </span></li>
+                        <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">Lowcut - Taper <i class="fas fa-scissors text-purple-900"></i></span><img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/male-hair5.jpg "><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Joshep <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star-half-alt text-amber-300"></i><br> Service: E - Class  <i class="fas fa-gem text-purple-400"></i> </span></li>
                         <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">High - Taper <i class="fas fa-scissors text-purple-900"></i></span><img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/barbing1.jpg "><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Emmanuels <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star text-amber-300"></i><br> Service: E - Class <i class="fas fa-gem text-purple-400"></i> </span></li>
                         <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">Low - Taper & Curls <i class="fas fa-scissors text-purple-900"></i></span><img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/taper-back.jpg"><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Daniels <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i><br> Service: VIP <i class="fas fa-crown text-amber-400"></i> </span></li>
                         <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">High - Taper & Waves <i class="fas fa-scissors text-purple-900"></i> </span>                <img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/highTaper2.jpg "><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Irish <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star-half-alt text-amber-300"></i><br> Service: E - Class <i class="fas fa-gem text-purple-400"></i> </span></li>
-                        <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">High Taper  <i class="fas fa-scissors text-purple-900"></i></span>                <img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/highwave3.jpg"><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Jayden <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star text-amber-300"></i><br> Service: VIP <i class="fas fa-crown text-amber-400"></i> </span></li>
+                        <li class="scroll-animation relative"> <span class="absolute text-[18px]  right-[0px] top-[0px] w-full py-4 px-4 bg-purple-600 text-white ">High - Taper  <i class="fas fa-scissors text-purple-900"></i></span>                <img class="h-[400px] lg:h-[400px] w-full" src="/assest/images/highwave3.jpg"><span class="text-left pt-11 pl-5 absolute h-32  align-text-bottom w-full left-0 bottom-0 text-white italic" style="background:  linear-gradient(to top, rgba(0,0,0), rgba(0,0,0,0.8), rgba(0,0,0, 0.6),  rgba(0,0,0, 0.4) ,  rgba(0,0,0, 0.0) );" >Name: Jayden <br> Rating: <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="fas fa-star text-amber-300"></i> <i class="far fa-star text-amber-300"></i><br> Service: VIP <i class="fas fa-crown text-amber-400"></i> </span></li>
                         
-                    </ul>
-                                     <a href="/src/works.html" ">             <button class="text-[16px] lg:text-[20px] scroll-animation w-[30%] lg:w-[20%] rounded-[8px] bg-purple-600 py-2 lg:py-4 px-4 text-white mt-8 hover:bg-purple-900 cursor-pointer">All Works</button></a>
+                    </ul>                                     <a href="/src/works.html" class="action-link text-center text-[16px] lg:text-[20px] scroll-animation w-[40%] lg:w-[20%] rounded-[8px] bg-purple-600 py-2 lg:py-4 px-4 text-white mt-8 hover:bg-purple-900 cursor-pointer">All Works</a>
         </div>
         
     </section>
@@ -302,22 +314,22 @@
     <!-- Contact Section -->
 <section id="book" class=" py-16 lg:py-25 px-[16px] lg:px-[120px]">
   <div class="mx-auto text-center">
-    <h2 class="text-[28px] md:text-[34px] lg:text-[42px] font-bold mb-4">
+    <h2 class="scroll-animation text-[28px] md:text-[34px] lg:text-[42px] font-bold mb-4">
       Book a  <span class="text-purple-700">Service</span>
     </h2>
-    <p class="text-gray-600 mb-10">Have a project in mind or just want to connect? Let’s talk.</p>
+    <p class="scroll-animation text-gray-600 mb-10">Have a project in mind or just want to connect? Let’s talk.</p>
     
-    <!-- Form -->
+ <!-- Form -->
     <form id="contactForm" class="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-      <div>
+      <div class="scroll-animation">
         <input name="name" type="text" placeholder="Your Name" required
           class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:border-purple-500">
       </div>
-      <div>
+      <div class="scroll-animation">
         <input name="email" type="email" placeholder="Your Email or Whatsapp" required
           class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:purple-green-500">
       </div>
-      <div class="md:col-span-2">
+      <div class="md:col-span-2 scroll-animation">
         <textarea name="message" rows="5" placeholder="All About Your Service" required
           class="w-full p-4 border border-gray-300 rounded-xl focus:outline-none focus:border-purple-500"></textarea>
       </div>
@@ -325,12 +337,43 @@
       <!-- Hidden timestamp for template -->
       <input type="hidden" name="time" value="">
 
-      <button type="submit" class="lg:text-[20px] text-[16px] bg-purple-700 hover:bg-purple-900 text-white font-semibold cursor-pointer py-4 px-6 rounded-xl shadow-md md:col-span-2">
+      <button type="submit" class="scroll-animation lg:text-[20px] text-[16px] bg-purple-700 hover:bg-purple-900 text-white font-semibold cursor-pointer py-4 px-6 rounded-xl shadow-md md:col-span-2">
         Book Service
       </button>
     </form>
   </div>
 </section>
+
+
+
+ <!-- Loading spinner with scissors icon (hidden by default) -->
+  <div id="loadingSpinner" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 flex justify-center items-center flex-col">
+    <div class="relative">
+      <!-- Spinner circle -->
+      <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-500 border-solid">
+        <!-- Scissors icon inside the spinner -->
+        <i class="fas fa-cut absolute top-0 left-0 right-0 bottom-0 m-auto text-purple-600 text-3xl"></i>
+      </div>
+    </div>
+
+    <!-- Loading text -->
+    <div class="mt-4 text-xl font-semibold text-gray-700">
+      Loading<span class="text-purple-600">...</span>
+    </div>
+
+    <!-- Preparing your barbing experience text -->
+    <div class="text-lg text-gray-500 mt-2">
+      Preparing your barbing experience
+    </div>
+
+    <!-- Loading Dots Animation -->
+    <div class="flex space-x-2 mt-4">
+      <div class="dot animate-bounce bg-purple-600 h-4 w-4 rounded-full"></div>
+      <div class="dot animate-bounce bg-purple-600 h-4 w-4 rounded-full animation-delay-200"></div>
+      <div class="dot animate-bounce bg-purple-600 h-4 w-4 rounded-full animation-delay-400"></div>
+    </div>
+  </div>
+
 
 <!-- Popup -->
 <div id="popup" class="hidden fixed inset-0 flex items-center justify-center bg-black/60 z-50">
@@ -356,7 +399,7 @@
     
   <div class=" flex  mt-[-14px] align-text-top   lg:w-[40%]  gap-6.5 flex-col  ">
     
-            <div class="scroll-animation text-[18px] lg:text-4xl font-bold">Mima's Cuts <i class="fas fa-scissors text-purple-500 scale-animation "></i></div>
+            <div class="scroll-animation text-[18px] lg:text-4xl font-bold">Mima's Cuts <i class="fas fa-crown text-purple-500 scale-animation "></i></div>
     <a href="#book"><button class="scroll-animation border-white  border-1 hover:bg-white-800 bg-purple-600  transition-all duration-400 cursor-pointer text-white hover:text-black rounded-[23px] hover:bg-purple-50 w-[139px] h-[44px] text-[14px]">Book Service <i class="fas fa-arrow-right"></i></button></a>
   </div>
 
@@ -364,10 +407,10 @@
   <div class="flex flex-col lg:gap-10.5">
     <h3 class="scroll-animation font-bold text-[18px] ">Links</h3>
     <div class="lg:flex-col flex gap-5">
-      <a class="scroll-animation hover:text-purple-700 text-[16px] " href="/index.html">Home</a>
-    <a class="scroll-animation hover:text-purple-700 text-[16px] " href="/src/service.html">Service</a>
-    <a class="scroll-animation hover:text-purple-700 text-[16px] " href="/src/about.html">About</a>
-        <a class="scroll-animation hover:text-purple-700 text-[16px] " href="/src/works.html">Works</a>
+      <a class="action-link scroll-animation hover:text-purple-700 text-[16px] " href="/index.html">Home</a>
+    <a class="action-link scroll-animation hover:text-purple-700 text-[16px] " href="/src/service.html">Service</a>
+    <a class="action-link scroll-animation hover:text-purple-700 text-[16px] " href="/src/about.html">About</a>
+        <a class="action-link scroll-animation hover:text-purple-700 text-[16px] " href="/src/works.html">Works</a>
 
     </div>
   </div>
@@ -386,10 +429,10 @@
   <div class="flex flex-col w-[10%]   gap-2.5 lg:gap-10.5 ">
     <h3 class="scroll-animation font-bold text-[18px] " >Socials</h3>
       <div class="flex gap-6">
-        <a href="https://www.facebook.com/profile.php?id=100080837630851" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fab fa-facebook-f text-[16px] lg:text-[24px]"></i></a>
-        <a href="https://wa.me/1234567890" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fab fa-whatsapp text-[16px] lg:text-[24px]"></i></a>
-        <a href="https://www.linkedin.com/in/awajimima-obisike-3b1b6036b/" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fab fa-linkedin-in text-[16px] lg:text-[24px]"></i></a>
-        <a href="https://www.instagram.com/mima_ui.ux?igsh=a2V3dm4wdDAwdm12" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fa-brands fa-instagram text-[16px] lg:text-[24px] "></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100080837630851" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fab fa-facebook-f text-[18px] lg:text-[24px]"></i></a>
+        <a href="https://wa.me/1234567890" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fab fa-whatsapp text-[18px] lg:text-[24px]"></i></a>
+        <a href="https://www.linkedin.com/in/awajimima-obisike-3b1b6036b/" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fab fa-linkedin-in text-[18px] lg:text-[24px]"></i></a>
+        <a href="https://www.instagram.com/mima_ui.ux?igsh=a2V3dm4wdDAwdm12" target="_blank" class="scroll-animation text-purple-500 hover:text-white text-lg"><i class="fa-brands fa-instagram text-[18px] lg:text-[24px] "></i></a>
       </div>
   </div>
 
@@ -429,6 +472,7 @@
 
 <script type="module" src="/assest/javascript/work.js"></script>
 <script type="module" src="/assest/javascript/contact.js"></script>
-  
+      <script type="module" src="/assest/javascript/loading.js"></script>
+
 </body>
 </html>

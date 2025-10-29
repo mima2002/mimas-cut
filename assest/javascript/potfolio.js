@@ -2,7 +2,7 @@
 
 
 // navScroll.js
-export function initNavScrollColor(navSelector = '.nav', scrollThreshold = 50) {
+
   const nav = document.querySelector(navSelector);
   if (!nav) return;
 
@@ -15,9 +15,6 @@ export function initNavScrollColor(navSelector = '.nav', scrollThreshold = 50) {
       nav.classList.remove('bg-green-50', 'shadow-lg');
     }
   });
-}
-initNavScrollColor('.nav'); // Default scroll threshold = 50px
-
 
 
 
@@ -28,7 +25,6 @@ export function typeWriter(elementId, text, speed, callback) {
 
     // Add cursor before typing starts
     el.classList.add("cursor");
-
     function typing() {
       if (i < text.length) {
         el.innerHTML = text.substring(0, i + 1); // keeps cursor at end

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scissors Icon Inside Loader</title>
+  <!-- Include Font Awesome CDN for icons -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-f4b8T+QX6qC9nN2Fh3rjHptF77w4j+z/ZT6wU1r6ef5LkE8tEe/fM7kS76RmFJpMefG1xg5Tq8P4+cO7hNns7A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="/assest/libary/fontawesome-free-6.7.2-web/css/all.min.css" />
+
+  <link href="/src/output.css" rel="stylesheet">
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+
+  <!-- Buttons and links -->
+  <div class="text-center space-y-4">
+    <button class="action-button bg-blue-500 text-white px-6 py-3 rounded-lg text-xl focus:outline-none">
+      Button 1
+    </button>
+    <button class="action-button bg-green-500 text-white px-6 py-3 rounded-lg text-xl focus:outline-none">
+      Button 2
+    </button>
+    <a href="#" class="action-link bg-yellow-500 text-white px-6 py-3 rounded-lg text-xl focus:outline-none inline-block">
+      Link 1
+    </a>
+    <a href="#" class="action-link bg-red-500 text-white px-6 py-3 rounded-lg text-xl focus:outline-none inline-block">
+      Link 2
+    </a>
+  </div>
+
+  <!-- Loading spinner with scissors icon (hidden by default) -->
+  <div id="loadingSpinner" class="hidden fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-70 flex justify-center items-center flex-col">
+    <div class="relative">
+      <!-- Spinner circle -->
+      <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-purple-500 border-solid">
+        <!-- Scissors icon inside the spinner -->
+        <i class="fas fa-cut absolute top-0 left-0 right-0 bottom-0 m-auto text-purple-600 text-3xl"></i>
+      </div>
+    </div>
+
+    <!-- Loading text -->
+    <div class="mt-4 text-xl font-semibold text-gray-700">
+      Loading<span class="text-purple-600">...</span>
+    </div>
+
+    <!-- Preparing your barbing experience text -->
+    <div class="text-lg text-gray-500 mt-2">
+      Preparing your barbing experience
+    </div>
+
+    <!-- Loading Dots Animation -->
+    <div class="flex space-x-2 mt-4">
+      <div class="dot animate-bounce bg-purple-600 h-4 w-4 rounded-full"></div>
+      <div class="dot animate-bounce bg-purple-600 h-4 w-4 rounded-full animation-delay-200"></div>
+      <div class="dot animate-bounce bg-purple-600 h-4 w-4 rounded-full animation-delay-400"></div>
+    </div>
+  </div>
+
+  <script>
+    // Select all buttons and anchor tags with the respective classes
+    const buttons = document.querySelectorAll('.action-button');
+    const links = document.querySelectorAll('.action-link');
+    const spinner = document.getElementById('loadingSpinner');
+
+    // Function to handle the loading state
+    function handleClick(event) {
+      event.preventDefault();  // Prevent default action (e.g., navigation for links)
+
+      // Show the spinner (start loading)
+      spinner.classList.remove('hidden');
+      
+      // Disable all buttons and links to prevent multiple clicks
+      buttons.forEach(button => button.disabled = true);
+      links.forEach(link => link.classList.add('cursor-not-allowed', 'opacity-50'));
+
+      // Simulate a delay (e.g., 2 seconds)
+      setTimeout(() => {
+        // Hide the spinner after the delay (loading is finished)
+        spinner.classList.add('hidden');
+        
+        // Re-enable buttons and links
+        buttons.forEach(button => button.disabled = false);
+        links.forEach(link => link.classList.remove('cursor-not-allowed', 'opacity-50'));
+        
+        // If it's a link, redirect after the delay (you can change this to any action you want)
+        if (event.target.tagName.toLowerCase() === 'a') {
+          window.location.href = event.target.href;
+        } else {
+          // If it's a button, perform your button action here (e.g., alert)
+          alert('Action completed!');
+        }
+      }, 2000); // 2-second delay
+    }
+
+    // Attach the event listener to all buttons and links
+    buttons.forEach(button => button.addEventListener('click', handleClick));
+    links.forEach(link => link.addEventListener('click', handleClick));
+  </script>
+
+</body>
+</html>
