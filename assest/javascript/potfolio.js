@@ -273,27 +273,33 @@ let autoSlideInterval = setInterval(nextSlide,4000);
 
 
    
-export function scroll (){
- const scrollAnimation = document.querySelectorAll('.scroll-animation');
+export function scroll() {
+  const scrollAnimation = document.querySelectorAll('.scroll-animation');
+  
+  // Function to trigger animation when elements are in view
+  const triggerAnimation = () => {
+    const windowHeight = window.innerHeight;
 
-  window.addEventListener('scroll', () => {
     scrollAnimation.forEach(box => {
       const boxTop = box.getBoundingClientRect().top;
-      //this is for the bottom animation//const boxBottom = box.getBoundingClientRect().bottom;
-      const windowHeight = window.innerHeight;
-
-      // Add animation when box enters view
-      if (boxTop < windowHeight // bottom animation/*&& boxBottom > 0*/
-        ) {
+      // Add animation when box enters the viewport
+      if (boxTop < windowHeight) {
         box.classList.add('show');
       } else {
-        box.classList.remove('show'); // Allow animation again when scrolling back
+        box.classList.remove('show'); // Remove class to allow animation when scrolling back
       }
-      });
-      
-  }); 
+    });
+  };
 
-  
+  // Listen for the scroll event
+  window.addEventListener('scroll', triggerAnimation);
 
-}scroll()
-  
+  // Trigger animation immediately when the page is loaded (or refreshed)
+  window.onload = triggerAnimation;
+
+  // Also trigger the animation on page load or refresh, just in case
+  triggerAnimation();
+}
+
+// Call the function to apply animations
+scroll();
