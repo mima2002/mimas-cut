@@ -273,33 +273,55 @@ let autoSlideInterval = setInterval(nextSlide,4000);
 
 
    
-export function scroll() {
-  const scrollAnimation = document.querySelectorAll('.scroll-animation');
-  
-  // Function to trigger animation when elements are in view
-  const triggerAnimation = () => {
-    const windowHeight = window.innerHeight;
+export function scroll (){
+ const scrollAnimation = document.querySelectorAll('.scroll-animation');
 
+  window.addEventListener('scroll', () => {
     scrollAnimation.forEach(box => {
       const boxTop = box.getBoundingClientRect().top;
-      // Add animation when box enters the viewport
-      if (boxTop < windowHeight) {
+      //this is for the bottom animation//const boxBottom = box.getBoundingClientRect().bottom;
+      const windowHeight = window.innerHeight;
+
+      // Add animation when box enters view
+      if (boxTop < windowHeight // bottom animation/*&& boxBottom > 0*/
+        ) {
         box.classList.add('show');
       } else {
-        box.classList.remove('show'); // Remove class to allow animation when scrolling back
+        box.classList.remove('show'); // Allow animation again when scrolling back
       }
-    });
-  };
+      });
+      
+  }); 
 
-  // Listen for the scroll event
-  window.addEventListener('scroll', triggerAnimation);
+  
 
-  // Trigger animation immediately when the page is loaded (or refreshed)
-  window.onload = triggerAnimation;
+}scroll()
 
-  // Also trigger the animation on page load or refresh, just in case
-  triggerAnimation();
-}
 
-// Call the function to apply animations
-scroll();
+
+
+
+
+
+
+window.onload = () => {
+    const content = document.querySelector('.first');
+    const header = document.querySelector('.second');
+
+    // Check if the page is being opened for the first time or reloaded
+    if (performance.navigation.type === 1) {
+        console.log("Page refreshed");
+        // Animation for page refresh: Content slides in
+        first.style.animation = 'fadeInUp 1.5s ease-out forwards';
+        // Different animation for header on refresh: Fade-in effect
+        second.style.animation = 'fadeIn 1s ease-out forwards';
+    } else {
+        console.log("Page opened for the first time");
+        // Animation for first-time page load: Fade and slide content up
+        first.style.animation = 'fadeInUp 1.5s ease-out forwards';
+        // Animation for first-time page load: Just fade-in the header
+        second.style.animation = 'fadeIn 1.5s ease-out forwards';
+    }
+};
+
+
